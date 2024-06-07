@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 48 48"
+     style="animation: audi-loader-rotation 2s infinite; transform-origin: 50% 50%;">
+  <style>
+    @keyframes audi-loader-rotation {
+      0% {
+        transform: rotate(-90deg);
+        animation-timing-function: cubic-bezier(0.69, 0.01, 0.83, 0.56)
+      }
+      50% {
+        transform: rotate(-45deg);
+        animation-timing-function: cubic-bezier(0.21, 0.55, 0.43, 1);
+      }
+      100% {
+        transform: rotate(630deg);
+      }
+    }
+    @keyframes audi-loader-stroke {
+      0% {
+        stroke-dasharray: 0, 138;
+        animation-timing-function: cubic-bezier(0.69, 0.01, 0.83, 0.56)
+      }
+      50% {
+        stroke-dasharray: 92, 46;
+        animation-timing-function: cubic-bezier(0.21, 0.55, 0.43, 1);
+      }
+      100% {
+        stroke-dasharray: 0, 138;
+      }
+    }
+  </style>
+  <circle cx="24"
+          cy="24"
+          r="22"
+          fill="none"
+          stroke-width="1"
+          stroke="rgba(0, 0, 0, 0.6)"></circle>
+  <circle cx="24"
+          cy="24"
+          r="22"
+          fill="none"
+          stroke-width="3"
+          stroke="#f50537"
+          stroke-dasharray="69, 69"
+          style="animation: audi-loader-stroke 2s infinite;"></circle>
+</svg>
